@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -20,8 +21,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
+import secure.open.standard.backend.events.UserInfected;
 import secure.open.standard.backend.model.Body;
 import secure.open.standard.backend.model.InlineResponse200;
+import secure.open.standard.backend.services.UserInfectedService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
