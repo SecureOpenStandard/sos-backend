@@ -7,15 +7,15 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication(exclude = KafkaAutoConfiguration.class)
-public class UserServiceApplication extends SpringBootServletInitializer {
+public class SosBackendApplication extends SpringBootServletInitializer {
 
   @Override
   protected SpringApplicationBuilder configure(final SpringApplicationBuilder application) {
-    return application.sources(UserServiceApplication.class);
+    return application.sources(SosBackendApplication.class);
   }
 
   public static void main(final String[] args) {
-    SpringApplication.run(UserServiceApplication.class, args);
+    SpringApplication.run(SosBackendApplication.class, args);
   }
 
 }
