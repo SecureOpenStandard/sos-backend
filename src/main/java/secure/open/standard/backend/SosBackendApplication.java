@@ -18,4 +18,6 @@ public class SosBackendApplication extends SpringBootServletInitializer {
     SpringApplication.run(SosBackendApplication.class, args);
   }
 
+
+
 }
