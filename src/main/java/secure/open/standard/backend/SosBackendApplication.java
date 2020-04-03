@@ -5,8 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication(exclude = KafkaAutoConfiguration.class)
+@EnableSwagger2()
+@ComponentScan(basePackages = { "secure.open.standard.backend", "secure.open.standard.backend.api" , "secure.open.standard.backend.config"})
 public class SosBackendApplication extends SpringBootServletInitializer {
 
   @Override
