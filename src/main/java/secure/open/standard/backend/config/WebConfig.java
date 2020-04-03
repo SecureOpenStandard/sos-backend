@@ -1,4 +1,4 @@
-package secure.open.standard.config;
+package secure.open.standard.backend.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
