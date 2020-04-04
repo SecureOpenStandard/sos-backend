@@ -46,7 +46,7 @@ public class UserInfectedService {
                 try {
                     String plain = jweService.decrypt(payload);
                     LOG.info("was decrypted as '" + plain+"'");
-                    this.publishedKeys.addAll(userInfected.getPayload());
+                    this.publishedKeys.add(plain);
                 } catch (Exception e) {
                     LOG.info("could not be decrypted, ignoring");
                 }

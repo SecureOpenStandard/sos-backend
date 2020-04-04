@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>secure.open.standard</groupId>
 	<artifactId>sos-backend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<name>sos-backend</name>
 	<description>SOS backend</description>
 
