@@ -17,4 +17,5 @@ public class UserInfected {
 
   private List<String> payload;
 
+
 }
